@@ -1,0 +1,4 @@
+<div class="product-panel-info" [class.product-panel-info--selected]="cartItem && cartItem.selected">
+  <img [src]="cartItem.imageURI" class="product-panel-info__image" />
+  <h5 class="product-panel-info__money">{{ cartItem ? cartItem.price : 0 | currency: "BRL" }}</h5>
+</div>

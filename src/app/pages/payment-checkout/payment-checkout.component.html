@@ -1,0 +1,7 @@
+<section class="payment-checkout">
+  <ng-container *ngIf="items">
+    <div class="payment-checkout__items" *ngFor="let item of items">
+      <app-product-panel-info (click)="onHandleSelectItem(item.id)" [cartItem]=[item]></app-product-panel-info>
+    </div>
+  </ng-container>
+</section>
