@@ -2,9 +2,11 @@
   background: #B3C2F2;
   height: 100%;
   width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
   display: grid;
   grid-template-rows: 20% 78%;
-  grid-row-gap: 2%;
   grid-template-areas: "header""content";
 
   &__header {

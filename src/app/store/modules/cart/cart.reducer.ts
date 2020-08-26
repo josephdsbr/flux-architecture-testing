@@ -15,7 +15,9 @@ export const cartReducer = (state: CartState = cartInitialState, action: CardAct
         break;
       case CartActionsType.CART_SELECT_ITEM:
         draft.items.forEach(item => {
-          item.selected = item.id === action.payload;
+          if (item.id == action.payload) {
+            item.selected = !item?.selected;
+          }
         });
         break;
     }

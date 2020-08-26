@@ -3,63 +3,63 @@ import * as faker from 'faker';
 
 export const CartItemsMock: CartItem[] = [
   {
-    id: faker.random.number(),
+    id: 1,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 2,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 3,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 4,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 5,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 6,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 7,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 8,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
     imageURI: 'https://picsum.photos/200/300'
   },
   {
-    id: faker.random.number(),
+    id: 9,
     name: faker.random.word(),
     price: faker.random.number(),
     selected: faker.random.boolean(),
