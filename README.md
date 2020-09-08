@@ -12,8 +12,17 @@ In general, NgRx and Redux have much more features than Flux suggested at its be
 
 ## Structure
 
+How we see in the image below, the data flow is unidirectional. It means that the data pass from a sector to another just in one way. It is extensively used in Reactive programs. In practice, it means that child components cannot update information in their parents.
+
+Redux architecture is quite simple to understand. The **Store** is responsible for maintaining the global **State** object. The **View** is an, for example, a page in which users can interact with the application. Some events can dispatch an Action (which has an identifier and, in some cases, pieces of information) to the **Reducer**.
+The reducer is where is implemented our logic. It is responsible to identify, based on the action dispatched, how to update the state into the store.
+Then, any changes in the store it is going to update all the Views that depends on its information.
+
+In some cases, it is necessary, depending on the action dispatched, to make some logic before the action reached on the reducer. It is called **Middleware**. In most cases, this dispatch a **Side Effect** as a request to an API or to dispatch other actions.
+
 <div align="center">
   <img style="margin: 0 15px !important" src="./github/images/redux-architecture-overview-middleware.png" alt="flux-architecture" height="425" />
+  <a href="https://blog.novoda.com/introduction-to-redux-in-flutter/">Direitos autorais</a>
 </div>
 
 ## Development server
@@ -30,12 +39,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Jest](https://jestjs.io/).
 
-## Running end-to-end tests
+## Social Media
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+If you want to ask something, please contact me on my Social Media.
 
-## Further help
+- **Instagram** - [@pajebr](https://www.instagram.com/pajebr/)
+- **Linkedin** - [josephdsbr](https://www.linkedin.com/in/josephdsbr)
+- **GitHub** - [josephdsbr](https://github.com/josephdsbr)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Made with <3 by José Vinícius
