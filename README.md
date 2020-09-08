@@ -1,6 +1,6 @@
 <h1 align="center">FluxArchitectureTest</h1>
 
-<p align="center">This project was developed to show how can we use the Flux Architecture with NGRX library in Angular.</p>
+<p align="center">This project was developed to demonstrate how to create an Reactive Application using the Flux Pattern into Angular 8+</p>
 
 <h2>What is Flux?</h2>
 
@@ -8,7 +8,7 @@
 
 In our case, you are going to explore the [NgRx library](https://ngrx.io/), which has based on Redux, but at the same time, it encourages the use of the Reactive Paradigm using the [RxJS library](https://rxjs-dev.firebaseapp.com/).
 
-In general, NgRx and Redux have much more features than Flux suggested at its beginning. But we are going to focus on the basic structures such as dispatchers, actions, views, reducers, and stores.
+In general, NgRx and Redux have much more features than Flux suggested at its beginning. But we are going to focus on the basic structures such as dispatchers, actions, views, reducers, middlewares, and stores.
 
 ## Structure
 
@@ -25,13 +25,13 @@ In some cases, it is necessary, depending on the action dispatched, to make some
   <a href="https://blog.novoda.com/introduction-to-redux-in-flutter/">Direitos autorais</a>
 </div>
 
+## Project
+
+In this project we
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -49,4 +49,4 @@ If you want to ask something, please contact me on my Social Media.
 - **Linkedin** - [josephdsbr](https://www.linkedin.com/in/josephdsbr)
 - **GitHub** - [josephdsbr](https://github.com/josephdsbr)
 
-Made with <3 by José Vinícius
+Made with <3 by José Vinícius.
