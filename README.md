@@ -1,6 +1,6 @@
 <h1 align="center">FluxArchitectureTest</h1>
 
-<p align="center">This project was developed to demonstrate how to create an Reactive Application using the Flux Pattern into Angular 8+</p>
+<p align="center">This project was developed to demonstrate how to create an Reactive Application using the Flux Pattern into Angular 9+.</p>
 
 <h2>What is Flux?</h2>
 
@@ -27,7 +27,15 @@ In some cases, it is necessary, depending on the action dispatched, to make some
 
 ## Project
 
-In this project we
+In this project, we are going to create a cart in which we can insert new items, (de)select them. We're going to implement the logic to calculate the value of the cart based on TDD.
+
+## Technologies
+
+- [Angular](https://angular.io/)
+- [NgRx](https://ngrx.io/)
+- [Jest](https://jestjs.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- [BEM](http://getbem.com/)
 
 ## Development server
 
