@@ -3,11 +3,11 @@ import { CartItemsMock } from 'src/app/assets/mocks/cart-items.mock';
 import { CartState } from "src/app/models/cart.model";
 import { CardActions, CartActionsType } from './cart.actions';
 
-const cartInitialState: CartState = {
+export const cartInitialState: CartState = {
   items: CartItemsMock
 };
 
-export const cartReducer = (state: CartState = cartInitialState, action: CardActions): CartState => {
+export const CartReducer = (state: CartState = cartInitialState, action: CardActions): CartState => {
   return produce(state, draft => {
     switch (action.type) {
       case CartActionsType.CART_ADD_ITEM:
