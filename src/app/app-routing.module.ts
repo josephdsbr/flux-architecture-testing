@@ -8,6 +8,11 @@ const routes: Routes = [
     path: 'pages',
     component: DefaultLayoutComponent,
     loadChildren: () => import('./pages/pages.module').then(pages => pages.PagesModule)
+  },
+  {
+    path: '',
+    redirectTo: 'pages',
+    pathMatch: 'full'
   }
 ];
 

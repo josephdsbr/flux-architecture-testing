@@ -4,14 +4,14 @@
   display: grid;
   grid-template-rows: 70% 28%;
   grid-row-gap: 2%;
-  background: #cadbc0;
+  background: #6E6A6F;
   border-radius: 15px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 
-  -webkit-box-shadow: 2px 8px 15px -10px rgba(0, 0, 0, 0.67);
-  -moz-box-shadow: 2px 8px 15px -10px rgba(0, 0, 0, 0.67);
-  box-shadow: 2px 8px 15px -10px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 2px 8px 15px -10px #64B6AC;
+  -moz-box-shadow: 2px 8px 15px -10px #64B6AC;
+  box-shadow: 2px 8px 15px -10px #64B6AC;
 
   &:hover {
     filter: brightness(92%);
@@ -27,11 +27,12 @@
 
   &__money {
     margin: auto;
+    color: #0B132B;
     font-weight: 900;
     font-size: 1.2rem
   }
 
   &--selected {
-    background: #60935d;
+    background: #64B6AC;
   }
 }

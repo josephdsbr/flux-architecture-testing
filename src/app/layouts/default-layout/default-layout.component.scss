@@ -1,5 +1,5 @@
 .default-layout {
-  background: #B3C2F2;
+  background: #E5D9F2;
   height: 100%;
   width: 100%;
   max-height: 100%;
@@ -11,22 +11,22 @@
 
   &__header {
     grid-area: header;
-    background: #735cdd;
+    background: #A594F9;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-box-shadow: 2px 8px 15px -10px rgba(0, 0, 0, 0.67);
-    -moz-box-shadow: 2px 8px 15px -10px rgba(0, 0, 0, 0.67);
-    box-shadow: 2px 8px 15px -10px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 2px 8px 15px -10px #CDC1FF;
+    -moz-box-shadow: 2px 8px 15px -10px #CDC1FF;
+    box-shadow: 2px 8px 15px -10px #CDC1FF;
     transition: 0.3s ease-in-out;
 
     &:hover {
-      filter: brightness(90%);
+      filter: brightness(98%);
     }
   }
 
   &__title {
-    color: #2f0a28;
+    color: #E5D9F2;
     font-size: 2rem;
     font-weight: 900;
   }
