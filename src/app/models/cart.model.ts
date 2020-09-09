@@ -1,5 +1,6 @@
 export interface CartState {
   items: CartItem[];
+  value: number;
 }
 
 export interface CartItem {

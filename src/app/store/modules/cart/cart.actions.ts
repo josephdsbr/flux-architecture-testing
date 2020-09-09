@@ -1,8 +1,8 @@
 import {Action} from '@ngrx/store';
-import { CartItem } from 'src/app/models/cart.model';
 
 export enum CartActionsType {
-  CART_SELECT_ITEM = '[CARD] SELECT ITEM'
+  CART_SELECT_ITEM = '[CART] SELECT ITEM',
+  CART_CALCULATE_VALUE = '[CART] CALCULATE VALUE'
 }
 
 export class CartSelectItem implements Action {
@@ -10,4 +10,9 @@ export class CartSelectItem implements Action {
   constructor(public payload: number) {};
 }
 
-export type CardActions = CartSelectItem;
+export class CartCalculateValue implements Action {
+  readonly type = CartActionsType.CART_CALCULATE_VALUE;
+  constructor() {};
+}
+
+export type CardActions = CartSelectItem | CartCalculateValue;

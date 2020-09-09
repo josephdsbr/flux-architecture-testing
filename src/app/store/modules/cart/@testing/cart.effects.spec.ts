@@ -6,6 +6,8 @@ import {TestBed} from "@angular/core/testing";
 import { reducers, metaReducers } from 'src/app/store';
 import {provideMockStore} from "@ngrx/store/testing";
 import {provideMockActions} from "@ngrx/effects/testing";
+import * as CartActions from '../cart.actions';
+import { cold, hot } from 'jasmine-marbles';
 
 describe('CartEffects', () => {
   let actions: Observable<any>;
@@ -35,5 +37,13 @@ describe('CartEffects', () => {
 
   it('should be created', () => {
     expect(metadata).toBeTruthy();
+  })
+
+  it('should dispatch CartCalculateValue when CartSelectItem is dispatched', () => {
+    action = new CartActions.CartSelectItem(1);
+    const outcome = new CartActions.CartCalculateValue();
+    actions = hot('-a', { a: action });
+    const expected = cold('-b', { b: outcome });
+    expect(effects$.selectItems).toBeObservable(expected);
   })
 })

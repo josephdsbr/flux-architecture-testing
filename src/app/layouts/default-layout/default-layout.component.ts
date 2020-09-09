@@ -1,4 +1,6 @@
+import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
+import { AppState } from 'src/app/store';
 
 @Component({
   selector: 'app-default-layout',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./default-layout.component.scss']
 })
 export class DefaultLayoutComponent implements OnInit {
-
-  constructor() { }
+  value: number;
+  constructor(private store: Store<AppState>) {
+    this.store.select(state => state.cart.value).subscribe(value => this.value = value);
+  }
 
   ngOnInit() {
   }

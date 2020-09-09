@@ -1,3 +1,4 @@
+import { CartEffects } from './store/modules/cart/cart.effects';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,7 @@ import { environment } from '../environments/environment';
 import {LOCALE_ID} from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeBR from '@angular/common/locales/es-BR';
+import { EffectsModule } from '@ngrx/effects';
 registerLocaleData(localeBR, 'br');
 
 @NgModule({
@@ -24,7 +26,8 @@ registerLocaleData(localeBR, 'br');
     StoreModule.forRoot(reducers, {
       metaReducers
     }),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    EffectsModule.forRoot([CartEffects])
   ],
   providers: [{
     provide: LOCALE_ID,
