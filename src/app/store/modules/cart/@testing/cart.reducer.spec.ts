@@ -9,18 +9,6 @@ it('should pass test', () => {
   expect(true).toBeTruthy();
 })
 
-it('should add an item into the cart', () => {
-  const payload: CartItem = { id: 1, name: 'Game', price: 2500, imageURI: '' };
-  const action = new cartActions.CartAddItem(payload);
-  const result = cartReducer.CartReducer(cartInitialState, action);
-
-  expect(result).toStrictEqual({
-    ...cartInitialState,
-    items: [...CartItemsMock, payload]
-  })
-})
-
-
 it('should select an item into the cart', () => {
   const payload: CartItem = { id: 1, name: 'Game', price: 2500, imageURI: '', selected: false };
   const items: CartItem[] = [payload];

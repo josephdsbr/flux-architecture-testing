@@ -18,6 +18,11 @@ Redux architecture is quite simple to understand. The **Store** is responsible f
 The reducer is where is implemented our logic. It is responsible to identify, based on the action dispatched, how to update the state into the store.
 Then, any changes in the store it is going to update all the Views that depends on its information.
 
+<div align="center">
+  <img style="margin: 0 15px !important" src="./github/images/flux-facebook.png" alt="flux-architecture" height="425" />
+  <a href="https://facebook.github.io/flux/docs/in-depth-overview/">Direitos autorais</a>
+</div>
+
 In some cases, it is necessary, depending on the action dispatched, to make some logic before the action reached on the reducer. It is called **Middleware**. In most cases, this dispatch a **Side Effect** as a request to an API or to dispatch other actions.
 
 <div align="center">

@@ -10,9 +10,6 @@ export const cartInitialState: CartState = {
 export const CartReducer = (state: CartState = cartInitialState, action: CardActions): CartState => {
   return produce(state, draft => {
     switch (action.type) {
-      case CartActionsType.CART_ADD_ITEM:
-        draft.items.push(action.payload);
-        break;
       case CartActionsType.CART_SELECT_ITEM:
         draft.items.forEach(item => {
           if (item.id == action.payload) {
