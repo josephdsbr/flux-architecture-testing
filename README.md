@@ -14,16 +14,15 @@ In general, NgRx and Redux have much more features than Flux suggested at its be
 
 How we see in the image below, the data flow is unidirectional. It means that the data pass from a sector to another just in one way. It is extensively used in Reactive programs. In practice, it means that child components cannot update information in their parents.
 
-Redux architecture is quite simple to understand. The **Store** is responsible for maintaining the global **State** object. The **View** is an, for example, a page in which users can interact with the application. Some events can dispatch an Action (which has an identifier and, in some cases, pieces of information) to the **Reducer**.
-The reducer is where is implemented our logic. It is responsible to identify, based on the action dispatched, how to update the state into the store.
-Then, any changes in the store it is going to update all the Views that depends on its information.
+Flux architecture is quite simple to understand. The **Store** is responsible for maintaining the global **State** object. The **View** is an, for example, a page in which users can interact with the application. Some events can dispatch an Action (which has an identifier and, in some cases, pieces of information) and, all the actions pass through a single **Dispatcher**, which is responsible for register a callback function that updates the states. Then, any changes in the store it is going to update all the Views that depends on its information.
 
 <div align="center">
   <img style="margin: 0 15px !important" src="./github/images/flux-facebook.png" alt="flux-architecture" height="425" />
   <a href="https://facebook.github.io/flux/docs/in-depth-overview/">Direitos autorais</a>
 </div>
 
-In some cases, it is necessary, depending on the action dispatched, to make some logic before the action reached on the reducer. It is called **Middleware**. In most cases, this dispatch a **Side Effect** as a request to an API or to dispatch other actions.
+In Redux we have the **Reducer** where is implemented our logic. It is responsible to identify, based on the action dispatched, how to update the state into the store.
+In some cases, it is necessary, depending on the action dispatched, to make some logic before the action reached on the reducer. It is called **Middleware**. In most cases, this calls a **Side Effect** as a request to an API or to dispatch other actions.
 
 <div align="center">
   <img style="margin: 0 15px !important" src="./github/images/redux-architecture-overview-middleware.png" alt="flux-architecture" height="425" />
